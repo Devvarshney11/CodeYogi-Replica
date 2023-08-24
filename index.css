@@ -68,7 +68,10 @@ nav ul li a {
     font-weight: 500;
     text-transform: uppercase;
 }
-
+nav ul li a:hover
+{
+    color:white;
+}
 .checkbtn {
     float: right;
     color: rgba(255, 255, 255, 0.85);
@@ -401,8 +404,174 @@ nav ul li a {
     border: none;
     background-color: white;
     color:white;
+    cursor:pointer;
 }
 .newsbtn:hover
 {
     background-color: #434242;
+}
+#contact
+{
+    width:100%;
+}
+#contact>h3
+{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.contactwrapper
+{
+    display:flex;
+    align-items:stretch;
+    justify-content: center;
+    text-align: center;
+    margin:140px 0;
+}
+.contactcard
+{
+    width:25%;
+}
+.contactcard h3
+{
+    font-family: 'Dosis', sans-serif;
+    color:#777;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    margin:4px 0;
+}
+.contactcard p
+{
+    margin:0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.contactcard i
+{
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contactform
+{
+    display:flex;
+    width:1110px;
+    margin:0 auto;
+    text-align: center;
+}
+.leftsection
+{
+    margin-left:150px;
+    width:37%;
+    display: flex;
+    flex-direction: column;
+}
+.leftsection input
+{
+    margin-bottom:5px;
+    width:400px;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.leftsection input:focus
+{
+    outline:none;
+}
+.rightsection
+{
+    width: 40%;
+}
+.rightsection textarea
+{
+    box-sizing: border-box;
+    padding:5px;
+    width:100%;
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+.rightsection textarea:focus
+{
+    outline:none;
+}
+.rightsection input
+{
+    padding: 13px 50px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: none;
+    background-color: white;
+    color:white;
+    float:right;
+    cursor: pointer;
+}
+.rightsection input:hover
+{
+    background-color: #434242;
+}
+#contact>p
+{
+    display: inline;
+    color:#777;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    position: relative;
+    left:362px;
+}
+.foottextwrapper
+{
+    margin:200px 0;
+}
+.footimage
+{
+    width:100%;
+    text-align: center;
+}
+.footimage img
+{   
+    width:200px;
+}
+.logos
+{
+    margin:0 auto;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.items
+{
+    border: 1px solid #212529;
+    margin-right:16px;
+    cursor:pointer;
+}
+.copyright
+{
+    margin-top:100px;
+}
+.copyright p
+{
+    color:#888;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-align: center;
 }
