@@ -18,7 +18,8 @@ body {
 
 nav {
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top:0;
     padding: 0 25px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.9);
@@ -68,51 +69,24 @@ nav ul li a {
     font-weight: 500;
     text-transform: uppercase;
 }
-nav ul li a:hover
-{
-    color:white;
+
+nav ul li a:hover {
+    color: white;
 }
+
 .checkbtn {
     float: right;
     color: rgba(255, 255, 255, 0.85);
-    font-size: 30px;
+    font-size: 24px;
     position: relative;
     top: 10px;
     line-height: 80px;
-    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
 
 #check {
     display: none;
-}
-
-@media (max-width:1020px) {
-    .checkbtn {
-        display: block;
-    }
-
-    nav ul {
-        position: fixed;
-        width: 98%;
-        left: -10px;
-        top: -100%;
-        text-align: center;
-        border: 1px solid grey;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        border-bottom: 1px solid grey;
-        line-height: 60px;
-        margin: 0;
-    }
-
-    #check:checked~ul {
-        top: 150px;
-    }
 }
 
 .landingsection {
@@ -403,19 +377,19 @@ nav ul li a:hover
     border-radius: 2px;
     border: none;
     background-color: white;
-    color:white;
-    cursor:pointer;
+    color: white;
+    cursor: pointer;
 }
-.newsbtn:hover
-{
+
+.newsbtn:hover {
     background-color: #434242;
 }
-#contact
-{
-    width:100%;
+
+#contact {
+    width: 100%;
 }
-#contact>h3
-{
+
+#contact>h3 {
     font-family: 'Dosis', sans-serif;
     text-align: center;
     font-size: 20px;
@@ -424,59 +398,59 @@ nav ul li a:hover
     margin-bottom: 80px;
     text-transform: uppercase;
 }
-.contactwrapper
-{
-    display:flex;
-    align-items:stretch;
+
+.contactwrapper {
+    display: flex;
+    align-items: stretch;
     justify-content: center;
     text-align: center;
-    margin:140px 0;
+    margin: 140px 0;
 }
-.contactcard
-{
-    width:25%;
+
+.contactcard {
+    width: 25%;
 }
-.contactcard h3
-{
+
+.contactcard h3 {
     font-family: 'Dosis', sans-serif;
-    color:#777;
+    color: #777;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
-    margin:4px 0;
+    margin: 4px 0;
 }
-.contactcard p
-{
-    margin:0;
+
+.contactcard p {
+    margin: 0;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
 }
-.contactcard i
-{
+
+.contactcard i {
     color: black;
     font-size: 40px;
     margin-bottom: 20px;
 }
-.contactform
-{
-    display:flex;
-    width:1110px;
-    margin:0 auto;
+
+.contactform {
+    display: flex;
+    width: 1110px;
+    margin: 0 auto;
     text-align: center;
 }
-.leftsection
-{
-    margin-left:150px;
-    width:37%;
+
+.leftsection {
+    margin-left: 150px;
+    width: 37%;
     display: flex;
     flex-direction: column;
 }
-.leftsection input
-{
-    margin-bottom:5px;
-    width:400px;
+
+.leftsection input {
+    margin-bottom: 5px;
+    width: 400px;
     box-sizing: border-box;
     padding: 10px 5px;
     font-size: 14px;
@@ -486,19 +460,19 @@ nav ul li a:hover
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.leftsection input:focus
-{
-    outline:none;
+
+.leftsection input:focus {
+    outline: none;
 }
-.rightsection
-{
+
+.rightsection {
     width: 40%;
 }
-.rightsection textarea
-{
+
+.rightsection textarea {
     box-sizing: border-box;
-    padding:5px;
-    width:100%;
+    padding: 5px;
+    width: 100%;
     display: block;
     font-size: 14px;
     line-height: 1.42857143;
@@ -508,70 +482,440 @@ nav ul li a:hover
     border-radius: 4px;
     margin-bottom: 24px;
 }
-.rightsection textarea:focus
-{
-    outline:none;
+
+.rightsection textarea:focus {
+    outline: none;
 }
-.rightsection input
-{
+
+.rightsection input {
     padding: 13px 50px;
     font-size: 14px;
     border-radius: 2px;
     border: none;
     background-color: white;
-    color:white;
-    float:right;
+    color: white;
+    float: right;
     cursor: pointer;
 }
-.rightsection input:hover
-{
+
+.rightsection input:hover {
     background-color: #434242;
 }
-#contact>p
-{
+
+#contact>p {
     display: inline;
-    color:#777;
+    color: #777;
     font-size: 10px;
     font-weight: 500;
     letter-spacing: 0.1rem;
     position: relative;
-    left:362px;
+    left: 362px;
 }
-.foottextwrapper
-{
-    margin:200px 0;
+
+.foottextwrapper {
+    margin: 200px 0;
 }
-.footimage
-{
-    width:100%;
+
+.footimage {
+    width: 100%;
     text-align: center;
 }
-.footimage img
-{   
-    width:200px;
+
+.footimage img {
+    width: 200px;
 }
-.logos
-{
-    margin:0 auto;
-    width:100%;
-    display:flex;
-    justify-content:center;
+
+.logos {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.items
-{
+
+.items {
     border: 1px solid #212529;
-    margin-right:16px;
-    cursor:pointer;
+    margin-right: 16px;
+    cursor: pointer;
 }
-.copyright
-{
-    margin-top:100px;
+
+.copyright {
+    margin-top: 100px;
 }
-.copyright p
-{
-    color:#888;
+
+.copyright p {
+    color: #888;
     font-size: 10px;
     font-weight: 500;
     letter-spacing: 0.1rem;
     text-align: center;
+}
+
+@media (max-width:1020px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        background-color: black;
+        position: fixed;
+        width:25%;
+        right:4%;
+        top: -100%;
+        text-align: center;
+        border: 1px solid grey;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        border-bottom: 1px solid grey;
+        line-height: 60px;
+        margin: 0;
+    }
+
+    #check:checked~ul {
+        top: 80px;
+    }
+
+}
+
+@media (max-width:1020px) and (min-width:850px) {
+    .landingheading {
+        font-size: 50px;
+        margin: 0 20px;
+    }
+    .aboutwrapper {
+        margin: 0 100px;
+    }
+
+    .aboutwrapper p {
+        font-size: 14px;
+    }
+
+    .motivationwrapper {
+        margin: 0 100px;
+    }
+
+    .motivationwrapper p {
+        font-size: 14px;
+    }
+
+    .landingdesc {
+        margin-top: 70px;
+        font-size: 12px;
+    }
+
+    .bannercontent p {
+        font-size: 11px;
+    }
+
+    .bannercontent h3 {
+        font-size: 20px;
+    }
+
+    .bannerimage img {
+        position: relative;
+        bottom: 45px;
+        right: 14px;
+    }
+
+    #teachsection {
+        margin: 150px auto 50px auto;
+    }
+
+    #contact>h3 {
+        margin-bottom: 50px;
+    }
+
+    .contactwrapper {
+        margin: 70px 0;
+    }
+
+    .foottextwrapper {
+        margin: 100px 0;
+    }
+}
+@media(max-width:1200px)
+{
+    .foottextwrapper {
+        margin: 100px 0;
+    }
+
+}
+@media (max-width:1200px) and (min-width:1020px) {
+    .aboutwrapper {
+        margin: 0 100px;
+    }
+
+    .motivationwrapper {
+        margin: 0 100px;
+    }
+
+    .landingheading {
+        font-size: 60px;
+    }
+
+    #contact>p {
+        position: relative;
+        left: 196px;
+        top: -56px;
+    }
+    .contactform {
+        flex-direction: column;
+    }
+}
+@media (max-width:850px)
+{
+    .bannersection {
+        flex-direction: column;
+    }
+
+    .bannercontent {
+        padding: 50px 20px;
+        width: 100%;
+    }
+
+    .bannercontent h3 {
+        font-size: 16px;
+    }
+
+    .bannercontent p {
+        font-size: 12px;
+    }
+
+    .bannercontent button {
+        padding: 8px 30px;
+        font-size: 14px;
+        margin-top: 13px;
+    }
+
+    .bannerimage {
+        width: 100%;
+    }
+
+    .bannerimage img {
+        width: 100%;
+        bottom: 0;
+        right: 0;
+    }
+}
+@media (max-width:850px) and (min-width:769px) {
+    .landingheading {
+        font-size: 40px;
+    }
+
+    .mainsectionbtn {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+    .aboutwrapper {
+        margin: 0 100px;
+    }
+
+    .aboutwrapper p {
+        font-size: 14px;
+    }
+
+    .motivationwrapper {
+        margin: 0 100px;
+    }
+
+    .motivationwrapper p {
+        font-size: 14px;
+    }
+}
+@media (max-width:768px)
+{
+    .methwrapper
+    {
+        flex-direction: column;
+    }
+    .methcard
+    {
+        width:100%;
+    }
+    .teachwrapper
+    {
+        flex-direction: column;
+    }
+    .teachcard
+    {
+        width:100%;
+    }
+    .contactwrapper
+    {
+        margin:50px 0;
+        flex-direction: column;
+    }
+    #contact>h3 {
+        margin-bottom: 50px;
+    }
+    .contactcard
+    {
+        width:100%;
+        margin:14px 0;
+    }
+}
+@media (max-width:768px) and (min-width:501px)
+{
+    .landingheading {
+        font-size: 40px;
+    }
+
+    .mainsectionbtn {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+
+    .aboutwrapper {
+        margin: 0 100px;
+    }
+
+    .aboutwrapper p {
+        font-size: 14px;
+    }
+
+    .motivationwrapper {
+        margin: 0 100px;
+    }
+
+    .motivationwrapper p {
+        font-size: 14px;
+    }
+}
+@media (max-width:500px)
+{
+    .maintextwrapper
+    {
+        justify-content: center;
+    }
+    .landingheading
+    {
+        font-size: 24px;
+    }
+    .landingdesc
+    {
+        font-size: 12px;
+        margin-top: 18px;
+    }
+    .mainsectionbtn
+    {
+        font-size: 12px;
+        padding: 8px 24px;
+    }
+    .scrolldown
+    {
+        display:none;
+    }
+    .aboutwrapper {
+        margin: 0 40px;
+    }
+    .aboutwrapper h3
+    {
+        font-size: 14px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .aboutwrapper p {
+        font-size: 12px;
+        margin-bottom:50px;
+    }
+
+    .motivationwrapper {
+        margin: 0 40px;
+    }
+    .motivationwrapper h3 
+    {
+        font-size: 14px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .motivationwrapper p {
+        font-size: 12px;
+    }
+    #METHODOLOGY {
+        margin: 100px auto 50px auto;
+    }
+    .methheading
+    {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .methcard i {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .methcard h3 {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    .methcard p 
+    {
+        font-size: 12px;
+    }
+    #teachsection
+    {
+        margin:100px 0;
+    }
+    .teachheading {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    .teachcard i {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .teachcard h3 {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    .teachcard p 
+    {
+        font-size: 12px;
+    }
+    .newscontentwrapper h3 {
+        font-size: 14px;
+        letter-spacing: 0.1rem;
+    }
+    .newslettersection
+    {
+        padding:0;
+        margin-bottom:30px;
+    }
+    .newsinput {
+        width: 150px;
+        height: 30px;
+    }
+    .newsbtn {
+        padding: 11px 12px;
+        font-size: 12px;
+    }
+    #contact h3 
+    {
+        font-size: 14px;
+    }
+    .contactcard i {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactcard h3 {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    .contactcard p 
+    {
+        font-size: 12px;
+    }
+    .footimage img
+    {
+        width: 150px;
+    }
+    nav ul 
+    {
+        width:50%;
+    }
+    nav ul li a
+    {
+        font-size: 10px;
+    }
 }
